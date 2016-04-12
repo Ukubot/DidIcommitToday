@@ -1,21 +1,23 @@
 /*MAIN CSS*/
 
+// Colors
+$background-color-main = #C1C3CE;
+$background-color-dark = #2F2E2E;
+$box-shadow-color = #888888;
+$hover-color = #00d9ae;
+
 body {
-  background-color: #C1C3CE;
+  background-color: $background-color-main;
   transition-duration: 0.5;
 }
 
 .jumbotron {
-  background-color: #2F2E2E;
+  background-color: $background-color-dark;
   color: #fff;
-  box-shadow: 3px 3px 2px #888888;
+  box-shadow: 3px 3px 2px $box-shadow-color;
 }
 
 // CONTAINERS
-
-.popup-container {
-  background-color: red;
-}
 
 .container {
   margin: 0px 70px !important;
@@ -34,5 +36,5 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #00d9ae;
+  color: $hover-color;
 }
