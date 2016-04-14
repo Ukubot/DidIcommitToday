@@ -12,5 +12,8 @@
     "grunt-contrib-concat": "",
     "grunt-express": "^1.4.1",
     "matchdep": ""
+  },
+  "dependencies": {
+    "grunt": "^1.0.1"
   }
 }
