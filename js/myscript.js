@@ -1,18 +1,11 @@
 YUI().use('yql', function(Y){
 
   var details = {};
-  var url1 = "https://github.com/Ukubot";
-
-  var query = 'select * from  where url = "' + url1 + '"';
-  var q = Y.YQL(query, function(r){
-    console.log(q);
-
-    // var previews = results.forEach(function(feedItem, idx) {
-    //   var contentPreview = document.createElement("div");
-    //   contentPreview.innerHTML = '<div class="sup">'+
-    //   "</div>";
-    //
-    //   $(".commits").append(contentPreview);
-    // });
+  var url1 = "https://api.github.com/users/ukubot";
+  $.getJSON(url1, function(detail) {
+  console.log(detail);
+  console.log(detail.followers);
+  $("#followersID").append(detail.followers);
   });
+
 });
